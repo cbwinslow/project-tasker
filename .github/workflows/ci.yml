@@ -57,7 +57,7 @@ jobs:
         poetry run pytest tests/ --cov=project_tasker --cov-report=xml
     
     - name: Upload coverage
-      uses: codecov/codecov-action@v2
+      uses: codecov/codecov-action@v5
       with:
         file: ./coverage.xml
         fail_ci_if_error: true
